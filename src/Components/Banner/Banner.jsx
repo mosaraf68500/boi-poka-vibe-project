@@ -10,7 +10,7 @@ const Banner = () => {
                 <button className="btn bg-[#23BE0A] text-white px-4 py-3 rounded">View The List</button>
             </div>
             <div className='py-16'>
-                <img src={img} alt="Bookshelf" className="w-[300px] h-[400px] rounded shadow bg-white" />
+                <img src={img} alt="Bookshelf" className="w-[300px] h-[450px] rounded shadow bg-white" />
             </div>
         </div>
     );
