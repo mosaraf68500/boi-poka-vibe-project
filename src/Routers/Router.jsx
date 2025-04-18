@@ -12,6 +12,7 @@ import Home from '../Pages/Home/Home';
   children:[
     {
         index:true,
+        loader:()=>fetch('data.json'),
         path:'/',
         Component:Home,
     }
