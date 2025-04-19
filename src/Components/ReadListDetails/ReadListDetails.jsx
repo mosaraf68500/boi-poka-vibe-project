@@ -12,7 +12,7 @@ const ReadListDetails = ({singleReadLIst}) => {
       <img
         src={image}
         alt="Book cover"
-        className="w-full h-auto rounded"
+        className="h-[200px] w-[300px] rounded"
       />
     </div>
 

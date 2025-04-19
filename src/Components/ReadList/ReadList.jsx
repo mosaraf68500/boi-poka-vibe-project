@@ -39,6 +39,10 @@ if(type==="rating"){
 
   return (
     <div className="w-10/12 mx-auto py-8">
+
+    <div className="bg-gray-200 rounded-xl">
+        <h1 className="text-3xl font-bold text-center p-4">Book</h1>
+    </div>
     <div className="py-10 flex justify-center items-center">
     <details className="dropdown">
   <summary className="btn m-1 bg-[#23BE0A] text-white">Sort By : {sort? sort:""}</summary>

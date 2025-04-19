@@ -3,11 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer footer-horizontal py-10 footer-center bg-base-200 text-base-content rounded p-10">
-      <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+      <nav className="grid grid-flow-col gap-4 text-md font-semibold">
+        <a className="link link-hover">Home</a>
+        <a className="link link-hover">Listed Books</a>
+        <a className="link link-hover">Pages to Read</a>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
