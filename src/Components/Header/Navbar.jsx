@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
 
     const Links=<>
         <ul className="flex gap-8">
         <li className="btn btn-outline btn-success">Home</li>
-        <li className="btn btn-outline btn-success">Listed Books</li>
+        <NavLink to="readList"><li className="btn btn-outline btn-success">Listed Books</li></NavLink>
         <li className="btn btn-outline btn-success">Pages to read</li>
         </ul>
     </>
