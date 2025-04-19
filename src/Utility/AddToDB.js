@@ -26,4 +26,4 @@ const AddToStoredDB=(id)=>{
 
 }
 
-export {AddToStoredDB};
+export {AddToStoredDB,getStoreBook};

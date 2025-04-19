@@ -25,6 +25,7 @@ import ReadList from '../Components/ReadList/ReadList';
     },
     {
         path:'readList',
+        loader:()=>fetch('data.json'),
         Component:ReadList,
     }
   ]
