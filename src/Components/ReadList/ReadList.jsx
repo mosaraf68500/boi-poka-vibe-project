@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { getStoreBook } from "../../Utility/AddToDB";
 import ReadListDetails from "../ReadListDetails/ReadListDetails";
+import Swal from "sweetalert2";
 
 const ReadList = () => {
 
@@ -28,11 +29,46 @@ setSort(type);
 if(type==="pages"){
     const sordByPages=[...readList].sort((a,b)=>a.totalPages-b.totalPages)
     setReatList(sordByPages);
+    Swal.fire({
+        title: "Sorted successfully by pages",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
 }
 
 if(type==="rating"){
     const sortByRating=[...readList].sort((a,b)=>a.rating-b.rating);
     setReatList(sortByRating)
+
+    Swal.fire({
+        title: "Sorded successfully by Rating",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
 }
 
 }
