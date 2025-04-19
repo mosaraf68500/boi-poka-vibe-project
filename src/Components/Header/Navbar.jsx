@@ -5,9 +5,10 @@ const Navbar = () => {
 
     const Links=<>
         <ul className="flex gap-8">
-        <li className="btn btn-outline btn-success">Home</li>
+        
+        <NavLink to="/"><li className="btn btn-outline btn-success">Home</li></NavLink>
         <NavLink to="readList"><li className="btn btn-outline btn-success">Listed Books</li></NavLink>
-        <li className="btn btn-outline btn-success">Pages to read</li>
+        <NavLink to="pagesToRead"><li className="btn btn-outline btn-success">Pages to Read</li></NavLink>
         </ul>
     </>
   return (
