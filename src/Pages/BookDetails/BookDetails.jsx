@@ -1,7 +1,14 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { AddToStoredDB } from '../../Utility/AddToDB';
 
 const BookDetails = () => {
+
+    const handleAddToBook=(id)=>{
+        AddToStoredDB(id);
+        console.log("clicked me")
+
+    }
 
     const {id}=useParams();
     const bookId=parseInt(id);
@@ -52,11 +59,11 @@ const BookDetails = () => {
           </div>
       
           <div className="flex gap-4 mt-4">
-            <button className="px-4 py-2 bg-white border border-gray-300 rounded hover:bg-gray-100 transition">
-              Read
+            <button onClick={()=>handleAddToBook(bookId)} className="px-4 py-2 bg-white border border-gray-300 rounded hover:bg-gray-100 transition">
+              Mark As Read
             </button>
             <button className="px-4 py-2 bg-cyan-600 text-white rounded hover:bg-cyan-700 transition">
-              Wishlist
+              Add To Wishlist
             </button>
           </div>
         </div>
