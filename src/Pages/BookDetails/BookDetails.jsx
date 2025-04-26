@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { AddToStoredDB } from '../../Utility/AddToDB';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const BookDetails = () => {
 
@@ -36,6 +37,12 @@ const BookDetails = () => {
     const {bookName,author,image,totalPages,publisher,rating,yearOfPublishing,review,category,tags}=singleBook;
     return (
         <div className="flex py-10 flex-col md:flex-row gap-6 p-6 bg-white shadow-2xl  rounded-lg">
+
+        <Helmet>
+          <title>
+            Books details
+          </title>
+        </Helmet>
         {/* Book Image */}
         <div className="w-full md:w-1/3 rounded-2xl flex justify-center items-center bg-gray-100">
           <img

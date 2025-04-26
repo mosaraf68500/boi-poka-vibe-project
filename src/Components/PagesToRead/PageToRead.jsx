@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { BarChart, Bar, XAxis, YAxis } from 'recharts';
 
 // Sample Data
@@ -27,6 +28,11 @@ const TriangleBar = (props) => {
 const PagesToRead = () => {
   return (
     <div className='flex justify-center py-10 items-center mx-auto'>
+    <Helmet>
+      <title>
+        page to read
+      </title>
+    </Helmet>
       
       <BarChart width={600} height={400} data={data}>
         <XAxis dataKey="name" />

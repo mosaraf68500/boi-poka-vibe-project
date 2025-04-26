@@ -1,10 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const ReadListDetails = ({singleReadLIst}) => {
 
     const {bookName,author,image,totalPages,publisher,rating,yearOfPublishing,review,category,tags}=singleReadLIst;
     return (
+      
         <div className="max-w-4xl mx-auto p-4">
+        <Helmet>
+          ReadListDetails
+        </Helmet>
         
   <div className="bg-white rounded-xl shadow flex gap-4 p-6 items-center">
     {/* Book Image */}
